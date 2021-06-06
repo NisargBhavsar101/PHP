@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-
-<html>
+        <html>
     <head>
         <style>
             .center{
@@ -62,6 +60,8 @@
     </head>
     <body bgcolor="#22222">
         
+   
+
         <script type="text/javascript">
             function submitForm() {
                 return confirm('Do you really want to submit the form?');
@@ -70,7 +70,7 @@
         <h2 style="text-align: center; background-color:aqua">-----Summer Inernship-2k21-----Fill Registration Form as-soon-as Possible-----</h2>
         <div class="center">
             <h1>Registration Form</h1>
-            <form action="SR.php" method="post" onsubmit="return submitForm(this);" >
+                      <form action="display.php" method="post" onsubmit="return submitForm(this);" >
                 
                 <label for="name">Name<font color=red>*</font></label>
                 <input id="name" name="name" type="text" placeholder="Enter the Name" required="required" />
@@ -121,7 +121,12 @@
                 <input id="pin" name="pin" type="number" maxlength="6" minlength="6" placeholder="Enter the Pin Code" />
                 <input type="submit" value="SUBMIT"/>
             </form>
-        </div>
-        
+                <button  style=" width: 100%;color:Black;padding: 14px 12px;margin: 8px ;border: none;border-radius: 4px;cursor: pointer;" >
+               <a href="display.php">
+                Display Record
+                </a>
+                </button>  
+            </div>
+                
     </body>
 </html>
